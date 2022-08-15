@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "0 0 * * * /etc/init.d/networking restart" >> /etc/corntab
+echo "0 0 * * * apt-get update" >> /etc/corntab
+echo "0 0 * * * apt-get upgrade" >> /etc/corntab
+echo "0 0 * * * fdisk -l" >> /etc/corntab

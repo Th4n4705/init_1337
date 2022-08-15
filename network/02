@@ -1,0 +1,1 @@
+eval ping `ifconfig en0 | awk '/broadcast/ {print $6}'` | arp -a | awk  '{print $2}' | sed 's/[()]//g' | grep '10.'

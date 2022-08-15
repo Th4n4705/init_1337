@@ -1,0 +1,4 @@
+#!/bin/bash
+nameofuser = "" 
+killall -u $nameofuser
+deluser $nameofuser
